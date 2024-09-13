@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255, 5, 255);
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    background: white;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 4px black;
+}
+.container .content .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;position: relative;
+}
+.container .content .img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid palevioletred;
+    cursor: pointer;
+}
+.container .content .img::before{
+    content: "";
+    position: absolute;
+    top:5px;
+    left: 125px;
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    pointer-events: none;
+    z-index: 999;
+}
+.container .content .img::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 125px;
+    background: black;
+    border-radius: 50%;
+    opacity: 0;
+    height: 190px;
+    width: 190px;
+    transition: .1s ease;
+}
+input{
+    display: none;
+}
+.container .content .img:hover::after{
+    opacity: 0.2;
+}i{
+    cursor: pointer;
+}.container .content .name{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 5px;
+}.container .content .job-spec{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: palevioletred;
+}
+.container .state{
+    margin-top: 20px;
+}
+.container .state .text{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.container .about_me_active{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.container .about_me_active{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}.container .text::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 16%;
+    height: 3px;
+    background:yellow;
+}
+.about_me_active{
+    display: none
+}
+.skills{
+    display: none;
+}.contact_me{
+    display: none;
+}
+.container .state .about_me_active p{
+  font-size: 17px;
+  text-align: justify;
+  margin-top: 5px;
+}.container .state .about_me_active .follow-text{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+    position: relative;
+}
+.container .state .about_me_active .follow-text::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 24%;
+    height: 3px;
+    background:rgb(0, 255, 51); 
+}.container .state .about_me_active i{
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    color:rgb(255, 47, 0);
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgb(130, 229, 238);
+    border: 2px solid violet;
+    padding: 8px;
+    border-radius: 50px;
+    transition: background .2s ease;
+}.container .state .about_me_active i:hover{
+background: none;
+color: rgb(0, 162, 255);
+}
+.container .state .skills p{
+   
+}.container .state .skills p span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.container .state .skills .exp-bd{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 0px;
+}.container .state .skills .exp-bd .box{
+    width: 100%;
+}.container .state .skills .exp-bd .box .c1{
+    font-weight: 900;
+    margin-bottom: 9px;
+}.container .state .skills .exp-bd .box .progress{
+    width: 100%;
+    height: 10px;
+    background: rgb(224, 222, 222);
+    position: relative;
+    border-radius: 10px;
+}.container .state .skills .exp-bd .box .progress.html5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 80%;
+    height: 10px;
+    border-radius:10px ;
+}
+.container .state .skills .exp-bd .box .progress.css::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 90%;
+    height: 10px;
+    border-radius:10px ;
+}
+.container .state .skills .exp-bd .box .progress.figma::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 96%;
+    height: 10px;
+    border-radius: 10px;
+}
+.container .state .skills .exp-bd .box .progress.java::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 60%;
+    height: 10px;
+    border-radius: 10px;
+} .percentage{
+    font-weight: 800;
+    font-size: 15px;
+}.container .state .contact_me .bx{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}.container .state .contact_me .contact_bx .bx p{
+    margin-left: 20px;
+    font-weight: 500;
+    margin-top: -10px;
+
+}
+.container .state .contact_me .contact_bx .bx p:hover{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container .state .contact_me .contact_bx{
+    margin-top: 10px;
+}.container .state .contact_me .contact_bx .ax i{
+    font-size: 20px;
+    color: rgb(136, 39, 4);
+}
+.container .tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.container .tabs .tab{
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}.container .tabs .tab::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background:rgb(255, 0, 0);
+}.container .tabs .tab:hover::before{
+    animation: draw .5s linear;
+}
+@keyframes draw{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100;
+    }
+}
+.container .state .about_me_active.active{
+    display: inline;
+}
+.container .state .skills.active{
+    display: block;
+}
+.container .state .contact_me.active{
+    display: block;
+}

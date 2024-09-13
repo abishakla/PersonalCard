@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Card</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+        <div class="img">
+            <label for="file" class="upload">
+                <img src="AbishaK.jpeg" alt="">
+            </label>
+            <input type="file" accept="image/*" name="image" id="file"  onchange="loadfile(event)" class="abi">
+            <i class='bx bx-pencil'  style="margin-left: -120px; position: absolute; margin-top: -90px;"></i>
+        </div>
+        <div class="name">Designer Youtuber</div>
+        <div class="job-spec">Web Developer</div>
+        </div>
+        <div class="state">
+            <div id="about" class="about_me_active">
+                <div class="text about-text"  style="font-size:25px; font-weight: 600; color: rgb(0, 94, 255);">About</div>
+                <p>I am a uiux designer,Youtuber, Webdesigner,Graphic Designer....</p>
+                <div class="follow-text">FOLLOW ME</div>
+                <div class="follow_opt">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-whatsapp' ></i>
+                    <i class='bx bxl-youtube' ></i>
+                </div>
+            </div>
+            <div id="skills" class="skills">
+                <div class="text" style="font-size:25px; font-weight: 600; color: rgb(0, 94, 255);">Skills</div>
+                <p style=" font-size: 20px;
+                margin-top: 8px;
+                text-align: justify;"><b>2+</b><span>Years Experience</span></p>
+                <div class="exp-bd">
+                    <div class="box">
+                        <div class="c1">HTML</div>
+                        <div class="progress html5"></div>
+                    </div>
+                    <div class="percentage">80%</div>
+                </div>
+                <div class="exp-bd">
+                    <div class="box">
+                        <div class="c1">CSS</div>
+                        <div class="progress css"></div>
+                    </div>
+                    <div class="percentage">90%</div>
+                </div>
+                <div class="exp-bd">
+                    <div class="box">
+                        <div class="c1">Figma</div>
+                        <div class="progress figma"></div>
+                    </div>
+                    <div class="percentage">96%</div>
+                </div>
+                <div class="exp-bd">
+                    <div class="box">
+                        <div class="c1">Javascript</div>
+                        <div class="progress java"></div>
+                    </div>
+                    <div class="percentage">60%</div>
+                </div>
+            </div>
+           
+            <div id="contact" class="contact_me">
+                <div class="text"  style="font-size:25px; font-weight: 600; color: rgb(0, 94, 255);">Contact </div>
+                <div class="contact_bx">
+                    <div class="bx">
+                        <div class="ax">
+                        <i class='bx bxs-phone-call' ></i></div>
+                        <p>Not Available</p>
+                    
+                </div>
+            </div>
+            <div class="contact_bx">
+                <div class="bx">
+                    <div class="ax">
+                        <i class='bx bx-current-location' ></i></div>
+                    <p>KanniyaKumari</p>
+                
+            </div>
+        </div>
+        <div class="contact_bx">
+            <div class="bx">
+                <div class="ax">
+                    <i class='bx bxl-gmail' ></i></div>
+                <p>Mail</p>
+            </div>
+        </div>
+    
+    <div class="contact_bx">
+        <div class="bx">
+            <div class="ax">
+                <i class='bx bxs-message-rounded-dots' ></i></div>
+            <p>Message</p>
+        
+    </div>
+</div>
+        </div>
+        <div class="tabs">
+        <div class="tab about_tab">ABOUT</div>
+        <div class="tab skills_tab">SKILLS</div>
+        <div class="tab contact_tab">CONTACT</div></div>
+
+    </div>
+    <script>
+       const tab1 = document.querySelector(".about_tab");
+const tab2 = document.querySelector(".skills_tab");
+const tab3 = document.querySelector(".contact_tab");
+const about = document.querySelector(".about_me_active");
+const skill = document.querySelector(".skills");
+const contact = document.querySelector(".contact_me");
+
+tab1.addEventListener("click", e => {
+    about.classList.add("active");
+    skill.classList.remove("active");
+    contact.classList.remove("active");
+});
+
+tab2.addEventListener("click", e => {
+    about.classList.remove("active");
+    skill.classList.add("active");
+    contact.classList.remove("active");
+});
+
+tab3.addEventListener("click", e => {
+    about.classList.remove("active");
+    skill.classList.remove("active");
+    contact.classList.add("active");
+});
+
+    </script>
+    
+</body>
+</html>
